@@ -1,0 +1,37 @@
+*,
+::before ::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: Poppins, sans-serif;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    filter: var(--icon-color);
+}
+
+.mail {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(226, 3, 3);
+}
+
+.phone {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(226, 3, 3);
+}
+
+b {
+    color: rgb(226, 3, 3);
+}
