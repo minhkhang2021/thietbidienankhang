@@ -1546,47 +1546,47 @@ footer {
   background-position: -256px 0px;
 }
 
-.list-product {
+.postsp {
   padding: 24px 0px;
 }
-.list-product .price-list {
+.postsp .price-list {
   text-align: center;
 }
-.list-product .price-list :hover {
+.postsp .price-list :hover {
   color: var(--text-color);
 }
-.list-product .price-list img {
+.postsp .price-list img {
   width: 30px;
   margin-bottom: -8px;
 }
-.list-product .price-list a {
+.postsp .price-list a {
   display: inline-block;
   font-size: 2rem;
   font-weight: bold;
   color: blue;
   border-bottom: 1px solid var(--background-color);
 }
-.list-product .list-product--LS {
+.postsp .postsp--LS {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 6px 12px;
   padding-top: 24px;
 }
-.list-product .list-product--LS p {
+.postsp .postsp--LS p {
   display: flex;
   width: 100%;
   background: var(--background-color);
   border: 1px solid black;
 }
-.list-product .list-product--LS :hover {
+.postsp .postsp--LS :hover {
   color: var(--text-color);
 }
-.list-product .list-product--LS img {
+.postsp .postsp--LS img {
   width: 16px;
   padding-left: 5px;
 }
-.list-product .list-product--LS a {
+.postsp .postsp--LS a {
   width: 100%;
   padding: 6px;
   color: blue;

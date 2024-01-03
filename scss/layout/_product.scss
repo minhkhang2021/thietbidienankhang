@@ -1,4 +1,4 @@
-.list-product {
+.postsp {
     padding: 24px 0px;
     // border: 1px solid var(--background-color);
 
@@ -19,7 +19,7 @@
             border-bottom: 1px solid var(--background-color);
         }
     }
-    .list-product--LS {
+    .postsp--LS {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
