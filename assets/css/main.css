@@ -1647,6 +1647,103 @@ footer {
   padding-left: 10px;
 }
 
+.body-page__right {
+  justify-content: center;
+  background: var(--background-color);
+  width: 230px;
+}
+.body-page__right :hover {
+  font-weight: bold;
+  color: red;
+}
+.body-page__right img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.body-page__right_h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-left: -15px;
+}
+
+.product__tille {
+  color: var(--text-color);
+  width: calc(100% - 10px);
+  background-color: #fffefe;
+  border-radius: 0px 12px 0px 0px;
+  font-weight: 700;
+  padding: 20px 0px 4px 10px;
+  font-size: 20px;
+}
+.product__group {
+  display: flex;
+  border-top: 5px solid red;
+}
+.product__group__producer {
+  display: grid;
+  width: 156px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background: rgb(239, 239, 239);
+  gap: 6px 6px;
+}
+.product__group__producer :hover img {
+  background: #fff;
+}
+.product__group__producer img {
+  width: 75px;
+  height: 75px;
+}
+.product__group__list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px 6px;
+}
+.product__group__list :hover .product__group__list__item__product > img {
+  background: #dbdbdb;
+}
+.product__group__list :hover h3 {
+  background: red;
+  color: #fff;
+  text-shadow: none;
+}
+.product__group__list__item {
+  border: 1px solid rgb(239, 239, 239);
+}
+.product__group__list__item__product > img {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  text-align: center;
+  background: #fff;
+  transition: 500ms;
+}
+.product__group__list__item__product > img__logo {
+  height: 50px;
+}
+.product__group__list__item__product > h3 {
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background: #fff;
+  border-radius: 4px;
+  padding: 6px 0px;
+  transition: 500ms;
+}
+.product__group__list__item__logo img {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home-top {
   display: flex;
   align-items: center;
@@ -1728,80 +1825,6 @@ footer {
 .home-body {
   padding-top: 12px;
 }
-.home-body .product__tille {
-  color: var(--text-color);
-  width: calc(100% - 10px);
-  background-color: #fffefe;
-  border-radius: 0px 12px 0px 0px;
-  font-weight: 700;
-  padding: 20px 0px 4px 10px;
-  font-size: 20px;
-}
-.home-body .product__group {
-  display: flex;
-  border-top: 5px solid red;
-}
-.home-body .product__group__producer {
-  display: grid;
-  width: 156px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  background: rgb(239, 239, 239);
-  gap: 6px 6px;
-}
-.home-body .product__group__producer :hover img {
-  background: #fff;
-}
-.home-body .product__group__producer img {
-  width: 75px;
-  height: 75px;
-}
-.home-body .product__group__list {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 6px 6px;
-}
-.home-body .product__group__list :hover .product__group__list__item__product > img {
-  background: #dbdbdb;
-}
-.home-body .product__group__list :hover h3 {
-  background: red;
-  color: #fff;
-  text-shadow: none;
-}
-.home-body .product__group__list__item {
-  border: 1px solid rgb(239, 239, 239);
-}
-.home-body .product__group__list__item__product > img {
-  width: 100%;
-  height: 140px;
-  border-radius: 8px;
-  margin-bottom: 4px;
-  text-align: center;
-  background: #fff;
-  transition: 500ms;
-}
-.home-body .product__group__list__item__product > img__logo {
-  height: 50px;
-}
-.home-body .product__group__list__item__product > h3 {
-  width: 100%;
-  text-align: center;
-  color: var(--text-color);
-  font-size: 1.4rem;
-  line-height: 1.6;
-  background: #fff;
-  border-radius: 4px;
-  padding: 6px 0px;
-  transition: 500ms;
-}
-.home-body .product__group__list__item__logo img {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .map-path {
   display: flex;
@@ -1857,23 +1880,6 @@ footer {
   color: var(--text-color);
   font-weight: bold;
   font-style: italic;
-}
-.body-page__right {
-  justify-content: center;
-  background: var(--background-color);
-  width: 230px;
-}
-.body-page__right img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.body-page__right_h2 {
-  text-align: center;
-  color: var(--text-color);
-  margin-left: -15px;
 }
 
 /*# sourceMappingURL=main.css.map */
