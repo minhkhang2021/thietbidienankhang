@@ -1422,6 +1422,41 @@ footer {
   font-weight: 400;
 }
 
+@media (min-width: 1025px) {
+  .float-contact {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99999;
+    text-align: left;
+  }
+  .chat-face,
+  .hotline,
+  .zalo {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid red;
+    margin-top: 24px;
+    background: red;
+  }
+  .chat-face img,
+  .hotline img,
+  .zalo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 99999;
+  }
+  .chat-face a,
+  .hotline a,
+  .zalo a {
+    color: #fff;
+    padding: 12px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
 .introduce {
   width: calc(100% - 15px);
   background: var(--background-color);
