@@ -1422,13 +1422,11 @@ footer {
   font-weight: 400;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 500px) {
   .float-contact {
     position: fixed;
     bottom: 40px;
-    right: 40px;
-    z-index: 99999;
-    text-align: left;
+    left: 40px;
   }
   .chat-face,
   .hotline,
@@ -1444,8 +1442,8 @@ footer {
   .chat-face img,
   .hotline img,
   .zalo img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 99999;
   }
   .chat-face a,
@@ -1453,7 +1451,7 @@ footer {
   .zalo a {
     color: #fff;
     padding: 12px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
   }
 }
@@ -1728,6 +1726,7 @@ footer {
 }
 .product__group__list__item__product > h3 {
   width: 100%;
+  min-height: 80px;
   text-align: center;
   color: var(--text-color);
   font-size: 1.4rem;
