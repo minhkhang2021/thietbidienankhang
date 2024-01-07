@@ -1432,7 +1432,7 @@ footer {
   font-weight: 400;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 200px) {
   .float-contact {
     position: fixed;
     bottom: 40px;
@@ -1450,14 +1450,14 @@ footer {
     background: red;
   }
 }
-@media (min-width: 500px) and (max-width: 991.98px) {
+@media (min-width: 200px) and (max-width: 991.98px) {
   .chat-face,
   .hotline,
   .zalo {
     margin-top: 8px;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 200px) {
   .chat-face img,
   .hotline img,
   .zalo img {
@@ -1466,7 +1466,7 @@ footer {
     border-radius: 99999;
   }
 }
-@media (min-width: 500px) and (max-width: 991.98px) {
+@media (min-width: 200px) and (max-width: 991.98px) {
   .chat-face img,
   .hotline img,
   .zalo img {
@@ -1474,7 +1474,7 @@ footer {
     height: 20px;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 200px) {
   .chat-face a,
   .hotline a,
   .zalo a {
@@ -1484,7 +1484,7 @@ footer {
     font-weight: 500;
   }
 }
-@media (min-width: 500px) and (max-width: 991.98px) {
+@media (min-width: 200px) and (max-width: 991.98px) {
   .chat-face a,
   .hotline a,
   .zalo a {
@@ -1968,6 +1968,9 @@ footer {
 .body-page .page-conten__body {
   padding-top: 12px;
 }
+.body-page .page-conten__body img {
+  width: 450px;
+}
 .body-page .page-conten__body h2 {
   font-size: 2.4rem;
   font-weight: bold;
@@ -1977,6 +1980,10 @@ footer {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 5px;
+}
+.body-page .page-conten__body h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 .body-page .page-conten__body a {
   color: var(--text-color);
