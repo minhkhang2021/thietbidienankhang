@@ -1,3 +1,4 @@
+@use "../abstracts";
 .home-top {
     display: flex;
     align-items: center;
@@ -11,6 +12,9 @@
         height: 350px;
         border: 1px solid var(--text-color);
         border-radius: 6px;
+        @include abstracts.breakpoint(md) {
+            width: 100%;
+        }
         :hover {
             color: #fff;
             background: red;
@@ -63,6 +67,9 @@
             width: 100%;
             height: 350px;
             object-fit: cover;
+        }
+        @include abstracts.breakpoint(md) {
+            display: none;
         }
     }
 }

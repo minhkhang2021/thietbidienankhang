@@ -96,6 +96,9 @@ header {
             gap: 6px;
             &__icon {
                 width: 70px;
+                @include abstracts.breakpoint(md) {
+                    display: none;
+                }
             }
             &__call {
                 min-width: 200px;

@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .introduce {
     width: calc(100% - 15px);
     background: var(--background-color);
@@ -36,6 +38,10 @@
             width: 30%;
             display: flex;
             align-items: center;
+
+            @include abstracts.breakpoint(md) {
+                display: none;
+            }
             span {
                 width: 62%;
                 h4 {
@@ -48,6 +54,7 @@
                     line-height: 1.4;
                 }
             }
+
             &__icon1 {
                 display: inline-block;
                 width: 64px;
