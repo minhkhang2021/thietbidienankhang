@@ -1,7 +1,11 @@
+@use "../abstracts";
 .body-page__right {
     justify-content: center;
     background: var(--background-color);
     width: 230px;
+    @include abstracts.breakpoint(lg) {
+        display: none;
+    }
     :hover {
         font-weight: bold;
         color: red;

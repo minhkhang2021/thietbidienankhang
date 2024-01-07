@@ -1668,11 +1668,16 @@ footer {
 }
 
 .page--contact {
-  display: grid;
+  display: block;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 6px 12px;
   padding-top: 24px;
+}
+@media (max-width: 991.98px) {
+  .page--contact {
+    display: block;
+  }
 }
 .page--contact p {
   font-size: 1.8rem;
@@ -1682,15 +1687,30 @@ footer {
   width: 30px;
   margin-bottom: -8px;
 }
+@media (max-width: 991.98px) {
+  .page--contact img {
+    display: none;
+  }
+}
 .page--contact a {
   font-size: 2.2rem;
   padding-left: 10px;
+}
+@media (max-width: 991.98px) {
+  .page--contact a {
+    font-size: 1.6rem;
+  }
 }
 
 .body-page__right {
   justify-content: center;
   background: var(--background-color);
   width: 230px;
+}
+@media (max-width: 991.98px) {
+  .body-page__right {
+    display: none;
+  }
 }
 .body-page__right :hover {
   font-weight: bold;
@@ -1933,6 +1953,11 @@ footer {
 .body-page .page-conten {
   width: calc(100% - 300px);
   padding: 0px 20px;
+}
+@media (max-width: 991.98px) {
+  .body-page .page-conten {
+    width: 100%;
+  }
 }
 .body-page .page-conten h1 {
   font-size: 4rem;
