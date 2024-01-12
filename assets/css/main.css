@@ -148,6 +148,7 @@ a {
 
 .icon {
   filter: var(--icon-color);
+  width: 20px;
 }
 
 .mail {

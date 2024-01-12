@@ -5,6 +5,7 @@
     align-items: center;
     gap: 6px 12px;
     padding-top: 24px;
+
     @include abstracts.breakpoint(lg) {
         display: block;
     }
