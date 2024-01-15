@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: 
 
-Sitemap: Sitemap: https://thietbidienankhang.vn/sitemap.xml
