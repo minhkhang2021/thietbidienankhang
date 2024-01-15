@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: 
 
-Sitemap: https://thietbidienankhang.vn/sitemap.xml
+Sitemap: Sitemap: https://thietbidienankhang.vn/sitemap.xml
