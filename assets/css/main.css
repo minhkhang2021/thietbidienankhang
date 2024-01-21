@@ -1964,10 +1964,12 @@ footer {
   font-size: 4rem;
   font-weight: 700;
   padding: 24px;
+  margin-bottom: 10px;
   border-bottom: 1px solid var(--background-color);
 }
 .body-page .page-conten__body {
   padding-top: 12px;
+  font-size: 1.6rem;
   height: 500px;
   overflow: auto;
 }
@@ -1977,12 +1979,11 @@ footer {
 .body-page .page-conten__body h2 {
   font-size: 2.4rem;
   font-weight: bold;
-  padding: 10px;
+  padding: 0px 20px;
 }
 .body-page .page-conten__body h3 {
   font-size: 1.8rem;
   font-weight: bold;
-  padding: 5px;
 }
 .body-page .page-conten__body h4 {
   font-size: 1.6rem;
@@ -1992,6 +1993,9 @@ footer {
   color: var(--text-color);
   font-weight: bold;
   font-style: italic;
+}
+.body-page .page-conten__body ul {
+  padding-left: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
