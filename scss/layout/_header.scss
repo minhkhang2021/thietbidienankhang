@@ -122,6 +122,7 @@ header {
 .navbar {
     @extend %flexItemCenter;
     gap: 12px;
+
     span {
         width: 25%;
         color: #ffffff;
@@ -164,12 +165,20 @@ header {
             }
         }
 
-        @include abstracts.breakpoint(lg) {
-            font-size: 1.6rem;
-        }
+        :not(.document) {
+            @include abstracts.breakpoint(lg) {
+                font-size: 1.6rem;
+            }
 
-        @include abstracts.breakpoint(md) {
-            display: none;
+            @include abstracts.breakpoint(md) {
+                display: none;
+            }
         }
+        @include abstracts.breakpoint(md) {
+            width: 100%;
+        }
+    }
+    @include abstracts.breakpoint(md) {
+        display: grid;
     }
 }

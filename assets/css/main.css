@@ -1375,13 +1375,23 @@ header {
   }
 }
 @media (max-width: 991.98px) {
-  .navbar__list {
+  .navbar__list :not(.document) {
     font-size: 1.6rem;
   }
 }
 @media (max-width: 767.98px) {
-  .navbar__list {
+  .navbar__list :not(.document) {
     display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar__list {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar {
+    display: grid;
   }
 }
 
