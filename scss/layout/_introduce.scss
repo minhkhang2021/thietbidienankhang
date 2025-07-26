@@ -1,6 +1,7 @@
 @use "../abstracts";
 
 .introduce {
+    width: 100%;
     background: var(--background-color);
     border-radius: 6px;
     .introduce-top {

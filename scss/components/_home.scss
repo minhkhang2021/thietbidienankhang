@@ -12,8 +12,8 @@
         height: 350px;
         border: 1px solid var(--text-color);
         border-radius: 6px;
-        @include abstracts.breakpoint(md) {
-            width: 100%;
+        @include abstracts.breakpoint(lg) {
+            display: none;
         }
         :hover {
             color: #fff;
@@ -68,7 +68,7 @@
             height: 350px;
             object-fit: cover;
         }
-        @include abstracts.breakpoint(md) {
+        @include abstracts.breakpoint(lg) {
             display: none;
         }
     }

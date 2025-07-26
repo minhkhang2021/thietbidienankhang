@@ -1,5 +1,7 @@
 @use "../abstracts";
 
+// 1. Reset box-sizing và ẩn overflow ngang
+
 %flexItemCenter {
     display: flex;
     align-items: center;
@@ -8,6 +10,7 @@
 header {
     background: var(--background-color);
 }
+
 .sub-header {
     @extend %flexItemCenter;
     justify-content: space-between;
@@ -15,7 +18,8 @@ header {
     border-bottom: 1px solid #ccc;
 
     @include abstracts.breakpoint(md) {
-        justify-content: space-around;
+        flex-wrap: wrap; // cho phép wrap
+        justify-content: center; // căn giữa khi wrap
     }
 
     &__list {
@@ -27,7 +31,7 @@ header {
             color: var(--text-color);
         }
 
-        :hover {
+        &:hover {
             font-weight: 700;
         }
 
@@ -37,7 +41,7 @@ header {
         }
 
         @include abstracts.breakpoint(md) {
-            display: none;
+            display: none; // ẩn menu con
         }
     }
 
@@ -54,6 +58,7 @@ header {
 
             @include abstracts.breakpoint(md) {
                 font-size: 1.6rem;
+                padding: 0 4px; // giảm padding
             }
         }
         a {
@@ -64,11 +69,18 @@ header {
 
 .body-header {
     @extend %flexItemCenter;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    @include abstracts.breakpoint(lg) {
+        gap: 20px;
+    }
+
+    @include abstracts.breakpoint(md) {
+        flex-wrap: wrap; // cho phép wrap
+        justify-content: center;
+    }
 
     &__logo {
-        width: 25%;
-
         img {
             display: block;
             width: 150px;
@@ -77,31 +89,49 @@ header {
             margin-right: auto;
         }
     }
+
     &__box {
         width: 25%;
+
         @include abstracts.breakpoint(lg) {
             display: none;
+        }
+
+        @include abstracts.breakpoint(md) {
+            display: none; // ẩn search trên mobile
         }
     }
 
     &__contact {
         @extend %flexItemCenter;
         justify-content: space-around;
-        min-width: 50%;
 
         &__details {
             @extend %flexItemCenter;
-            width: 40%;
             justify-content: space-around;
             gap: 6px;
+
             &__icon {
                 width: 70px;
+
                 @include abstracts.breakpoint(md) {
-                    display: none;
+                    display: none; // ẩn icon trên mobile
                 }
             }
+
             &__call {
                 min-width: 200px;
+
+                @include abstracts.breakpoint(md) {
+                    min-width: auto; // bỏ min-width cố định
+                    span {
+                        font-size: 1.4rem;
+                    }
+                    a {
+                        font-size: 1.6rem;
+                    }
+                }
+
                 span {
                     display: block;
                     font-weight: 600;
@@ -122,6 +152,11 @@ header {
 .navbar {
     @extend %flexItemCenter;
     gap: 12px;
+    width: 100%;
+
+    @include abstracts.breakpoint(lg) {
+        display: grid; // hiển thị dạng grid để wrap
+    }
 
     span {
         width: 25%;
@@ -129,17 +164,14 @@ header {
         background: red;
         text-align: center;
         font-size: 1.8rem;
-        padding: 10px 0px;
+        padding: 10px 0;
         margin-left: auto;
         margin-right: auto;
         border-radius: 6px;
 
         @include abstracts.breakpoint(lg) {
-            font-size: 1.6rem;
-        }
-
-        @include abstracts.breakpoint(md) {
-            width: 100%;
+            font-size: 1.8rem;
+            width: 100%; // full-width trên mobile
         }
     }
 
@@ -152,33 +184,41 @@ header {
         margin: 0;
         border-radius: 6px;
         left: 12px;
-        :hover {
-            font-weight: 700;
-        }
-
-        &__details {
-            color: #ffffff;
-            padding: 10px 30px;
-
-            @include abstracts.breakpoint(lg) {
-                padding: 10px;
-            }
-        }
-
-        :not(.document) {
-            @include abstracts.breakpoint(lg) {
-                font-size: 1.6rem;
-            }
-
-            @include abstracts.breakpoint(md) {
-                display: none;
-            }
-        }
-        @include abstracts.breakpoint(md) {
+        @include abstracts.breakpoint(lg) {
             width: 100%;
         }
     }
+    &__details {
+        display: inline-block;
+        color: #ffffff;
+        padding: 10px 20px;
+        @include abstracts.breakpoint(xl) {
+            font-size: 1.8rem;
+            padding: 10px 10px;
+        }
+
+        @include abstracts.breakpoint(lg) {
+            padding: 10px;
+        }
+
+        @include abstracts.breakpoint(md) {
+            padding: 8px 12px; // giảm padding để vừa khít
+            font-size: 1.8rem;
+        }
+        &:hover {
+            color: #000; // khi hover chuyển thành đen
+        }
+
+        &:not(.document) {
+            @include abstracts.breakpoint(lg) {
+                font-size: 2.4rem;
+                display: none; // ẩn link không quan trọng
+            }
+        }
+    }
+
     @include abstracts.breakpoint(md) {
-        display: grid;
+        width: 100%;
+        left: auto; // bỏ giá trị cố định
     }
 }

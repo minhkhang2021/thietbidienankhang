@@ -1,8 +1,12 @@
 *,
-::before ::after {
+*::before,
+*::after {
     box-sizing: border-box;
 }
-
+html,
+body {
+    overflow-x: hidden;
+}
 html {
     font-size: 62.5%;
 }
